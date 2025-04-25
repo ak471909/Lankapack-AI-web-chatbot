@@ -30,3 +30,22 @@ The "LankaPack Bot" description acts as a system prompt — it sets clear bounda
 Setting the temperature to modify the amount of creativity allowed in the response 
 ## temperature image
 
+Modifying the safety settings to block unwanted content
+## safety settings image 
+
+Setting the right safety settings is important for allowing the chatbot to give brief solutions without having to cut out important information
+## top p image
+
+The probability threshold in Top-p sampling (also known as nucleus sampling) controls how the model selects the next token (word) during text generation.
+sampling image 
+
+## Deployment on web-app
+
+1. Generate the Embed Code
+
+
+   - In Google AI Studio, go to the "Get code" section.
+   - Select "Embed on a website."
+   - Copy the generated HTML/JavaScript code.
+
+
