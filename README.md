@@ -23,18 +23,20 @@ The chatbot was trained on the document containing information about the company
 Set up an introduction message:
  "Hi, I am LankaPack Chatbot! Ask me anything about LankaPack or our products."
 
-## Prompt engineering image
+![image](https://github.com/user-attachments/assets/718fd7c3-b13a-4688-a624-180bf92d42cf)
+
 
 The "LankaPack Bot" description acts as a system prompt — it sets clear boundaries and goals for how the chatbot should behave, respond, and interact with users.
 
 Setting the temperature to modify the amount of creativity allowed in the response 
-## temperature image
+![image](https://github.com/user-attachments/assets/90d9b338-b033-414d-b464-3162441b2a3c)
+
 
 Modifying the safety settings to block unwanted content
-## safety settings image 
+![image](https://github.com/user-attachments/assets/54c1143e-090d-4298-8185-2f86d21ecf4d)
 
 Setting the right safety settings is important for allowing the chatbot to give brief solutions without having to cut out important information
-## top p image
+![image](https://github.com/user-attachments/assets/7b97e68d-e295-4267-898b-615db36008fe)
 
 The probability threshold in Top-p sampling (also known as nucleus sampling) controls how the model selects the next token (word) during text generation.
 sampling image 
@@ -49,7 +51,9 @@ sampling image
    - Copy the generated HTML/JavaScript code.
 
 2. Create the website as required and deploy using the code
-# files image 
+
+![image](https://github.com/user-attachments/assets/73faf847-0661-435d-ad30-910e727eba7b)
+
 
 File descriptions
 The main web files for the chatbot are the index.html, script.js, and styles.css files and stored within the public folder
@@ -69,9 +73,11 @@ This script manages a chatbot widget, handling UI interactions and server commun
 
 4. .env
    
+![image](https://github.com/user-attachments/assets/8c40eaed-c307-49a8-8ee8-54ece4956426)
+
 This file holds the API key from google AI studio to access the chatbot from the website and the port number that the localhost is hosted on
 
-5. package-lock.json
+6. package-lock.json
    
 This package-lock.json file defines the dependencies for your lankapack-chatbot project. Key points:
 Project Name & Version: It's labeled as lankapack-chatbot version 1.0.0.
@@ -86,5 +92,16 @@ This setup defines a Node.js project for a LankaPack chatbot using the Gemini AP
 7. server.js
     
 This script sets up an Express server for the LankaPack chatbot, integrating Google's Gemini API. It handles file uploads (PDFs) for context, initializes a persistent chat session, and provides routes for serving a frontend and API endpoint (/api/chat) to handle user messages. The chatbot responds based on the provided document, ensuring personalized, LankaPack-specific replies. CORS and body parsing are configured for smooth API communication, and the server auto-initializes the chat session on startup.
+
+
+## Prerequisites:
+Copy the company data PDF into the root folder if not already done
+Get your API key from https://aistudio.google.com/apikey
+- Add your api key under the command : GEMINI_API_KEY=YOUR_API_KEY
+- Run command in terminal - npm install
+  
+Server deployment 
+- Deploy server by running node server.js or npm start in the terminal and the following message should be displayed:
+
 
 
